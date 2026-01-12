@@ -11,7 +11,12 @@
 // Exemple de retour : "[14:35:22]"
 
 function obtenirHorodatage() {
-  // Votre code ici
+  const date = new Date();
+  const h = date.getHours();
+  const m = date.getMinutes();
+  const s = date.getSeconds();
+
+  return `[${h.toString()}:${m.toString()}:${s.toString()}]`;
 }
 
 // ===================================
