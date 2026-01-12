@@ -21,11 +21,22 @@ function obtenirHorodatage() {
 
 // ===================================
 // PARTIE 2 : CRÉATION DU PROXY CONSOLE
-// ===================================
-
-// ===================================
 // PARTIE 3 : MISE EN PLACE DU PROXY
 // ===================================
+const oldLog = console.log;
+console.log = (msg) =>{
+  oldLog(`${obtenirHorodatage()} => ${msg}`);
+};
+
+const oldWarn = console.warn;
+console.warn = (msg) =>{
+  oldWarn(`${obtenirHorodatage()} => ${msg}`);
+};
+
+const oldError = console.error;
+console.error = (msg) =>{
+  oldError(`${obtenirHorodatage()} => ${msg}`);
+};
 
 // ===================================
 // TESTS
