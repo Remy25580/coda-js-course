@@ -3,15 +3,16 @@
 // Remplacez les var dans le code suivant par des let ou des const au besoin.
 
 function add(a, b) {
-  var result = a + b;
+  const result = a + b;
   return result;
 }
 
 function substract(a, b) {
+  let result = 0;
   if (a < b) {
     result = 0;
   } else {
-    var result = a - b;
+    result = a - b;
   }
 
   return result;
