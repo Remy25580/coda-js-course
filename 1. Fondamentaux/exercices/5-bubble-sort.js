@@ -17,6 +17,7 @@
 // Paramètres : tableau, index1, index2
 // Cette fonction ne modifie pas le tableau directement
 
+<<<<<<< HEAD:1. Fondamentaux/5-bubble-sort.js
 function echanger(tableau, index1, index2) {
   const copy = [...tableau];
 
@@ -25,6 +26,9 @@ function echanger(tableau, index1, index2) {
 
   return copy;
 }
+=======
+function echanger(tableau, index1, index2) {}
+>>>>>>> a86d70c0efc9f44eb408317850b0f2a5eecee25f:1. Fondamentaux/exercices/5-bubble-sort.js
 
 // ===================================
 // PARTIE 2 : TRI À BULLE - VERSION BASIQUE
@@ -34,6 +38,7 @@ function echanger(tableau, index1, index2) {
 // Paramètres : tableau (array de numbers)
 // Return : le tableau trié
 
+<<<<<<< HEAD:1. Fondamentaux/5-bubble-sort.js
 function triABulle(tableau) {
   let currentTab = [...tableau];
   const lenght = tableau.lenght;
@@ -47,6 +52,9 @@ function triABulle(tableau) {
   }
   return currentTab;
 }
+=======
+function triABulle(tableau) {}
+>>>>>>> a86d70c0efc9f44eb408317850b0f2a5eecee25f:1. Fondamentaux/exercices/5-bubble-sort.js
 
 // ===================================
 // PARTIE 3 : TRI À BULLE OPTIMISÉ
@@ -56,7 +64,7 @@ function triABulle(tableau) {
 // (cela signifie que le tableau est déjà trié)
 
 function triABulleOptimise(tableau) {
-  // Votre code ici
+    // Votre code ici
 }
 
 // ===================================
