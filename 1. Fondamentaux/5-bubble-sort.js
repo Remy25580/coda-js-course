@@ -18,7 +18,12 @@
 // Cette fonction ne modifie pas le tableau directement
 
 function echanger(tableau, index1, index2) {
-  // Votre code ici
+  const copy = [...tableau];
+
+  copy[index1] = tableau[index2];
+  copy[index2] = tableau[index1];
+
+  return copy;
 }
 
 // ===================================
@@ -30,7 +35,17 @@ function echanger(tableau, index1, index2) {
 // Return : le tableau trié
 
 function triABulle(tableau) {
-  // Votre code ici
+  let currentTab = [...tableau];
+  const lenght = tableau.lenght;
+  for (let i = 0; i < lenght-1; ++i){
+    for (let j = 0; i < i; ++j){
+      if (currentTab[j] > currentTab[j+1]){
+        console.log("echange!");
+        currentTab = echanger(currentTab, j, j+1);
+      }
+    }
+  }
+  return currentTab;
 }
 
 // ===================================
